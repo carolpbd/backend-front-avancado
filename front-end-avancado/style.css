@@ -1,0 +1,130 @@
+html, body {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  /background: yellow;/
+  }
+
+.texto {
+  display: none;
+}   
+
+
+
+#amarelo {
+  background-color: yellow;
+  height: 100px;
+  width: 50;
+}
+#laranja {
+  background-color:orange ;
+  height: 100px;
+}
+.amarelo_tomate {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+#chiclete {
+  background-color: tomato;
+  height: 100px;
+}
+#naranja{
+  background-color: orangered;
+  height: 250px;
+}
+#azul {
+  background-color: aqua;
+  height: 100px;
+}
+#verde {
+  background-color: green;
+  height: 100px
+}
+#rosa {
+  background-color: palevioletred;
+  height: 100px;
+}
+.azul_verde {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 20vh, 20vh, 20vh
+}
+#cinza {
+  background-color: gray;
+  height: 50px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 480px) {
+  html, body {
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: 1fr;
+  }
+  #amarelo {
+      background-color: yellow;
+      height: 100px;
+      grid-column: 1/span 2;
+  }
+  #laranja {
+      background-color:orange ;
+      height: 100px;
+      grid-column: 1/span 2;
+  }
+  .amarelo_tomate {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+  }
+  #chiclete {
+      background-color: tomato;
+      height: 100px;
+}
+.azul_verde {
+ display: none;
+}
+
+/texto do lorem/
+.texto {
+  display: inline-block;
+}
+
+/* media queries tablet*/
+}
+@media only screen and (max-width: 768px) {
+  #amarelo {
+      background-color: yellow;
+      height: 100px;
+      width: 50;
+  }
+  #laranja {
+      background-color:orange ;
+      height: 100px;
+  }
+  .amarelo_tomate {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+  }
+  #chiclete {
+      background-color: tomato;
+      height: 100px;
+  }
+
+  #azul {
+      display: none;
+  }
+  #verde {
+      background-color: green;
+      height: 100px
+  }
+  #rosa {
+      background-color: palevioletred;
+      height: 100px;
+  }
+  .azul_verde {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 20vh, 20vh, 20vh
+  }
+
+
+}
